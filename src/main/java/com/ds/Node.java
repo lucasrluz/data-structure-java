@@ -1,43 +1,43 @@
 package com.ds;
 
-public class Node {
-    private String data;
-    private Node next;
-    private Node prev;
+public class Node<T> {
+    private T data;
+    private Node<T> next;
+    private Node<T> prev;
 
-    public Node(String data) {
+    public Node(T data) {
         this.data = data;
         this.next = null;
         this.prev = null;
     }
 
-    public Node(String data, Node next, Node prev) {
+    public Node(T data, Node<T> next, Node<T> prev) {
         this.data = data;
         this.next = next;
         this.prev = prev;
     }
 
-    public String getData() {
+    public T getData() {
         return data;
     }
 
-    public void setData(String data) {
+    public void setData(T data) {
         this.data = data;
     }
 
-    public Node getNext() {
+    public Node<T> getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+    public void setNext(Node<T> next) {
         this.next = next;
     }
 
-    public Node getPrev() {
+    public Node<T> getPrev() {
         return prev;
     }
 
-    public void setPrev(Node prev) {
+    public void setPrev(Node<T> prev) {
         this.prev = prev;
     }
 }

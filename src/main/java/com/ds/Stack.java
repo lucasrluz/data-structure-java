@@ -1,14 +1,14 @@
 package com.ds;
 
-public class Stack {
-    private Node top;
+public class Stack<T> {
+    private Node<T> top;
    
     public Stack() {
         this.top = null;
     }
 
-    public void push(String data) {
-        Node node = new Node(data);
+    public void push(T data) {
+        Node<T> node = new Node<T>(data);
 
         if (this.top == null) {
             this.top = node;
@@ -48,7 +48,7 @@ public class Stack {
         return false;
     }
 
-    public Node peek() {
+    public Node<T> peek() {
         return top;
     }
 }
