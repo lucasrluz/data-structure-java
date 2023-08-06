@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class QueueTests {
     @Test
     public void esperoQueCrieUmQueueComCincoElementos() {
-        Queue queue = new Queue();
+        Queue<String> queue = new Queue<String>();
 
         queue.enqueue("a");
         queue.enqueue("b");
@@ -26,7 +26,7 @@ public class QueueTests {
 
     @Test
     public void esperoQueCrieUmQueueComCincoElementosERemovaTodosOElementos() {
-        Queue queue = new Queue();
+        Queue<String> queue = new Queue<String>();
 
         queue.enqueue("a");
         queue.enqueue("b");

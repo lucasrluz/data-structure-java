@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class StackTests {
     @Test
     public void esperoQueCrieUmaStackCincoElementos() {
-        Stack stack = new Stack();
+        Stack<String> stack = new Stack<String>();
 
         stack.push("a");
         stack.push("b");
@@ -39,7 +39,7 @@ public class StackTests {
 
     @Test
     public void esperoQueCrieUmaStackCincoElementosERemovaTodosOsElementos() {
-        Stack stack = new Stack();
+        Stack<String> stack = new Stack<String>();
 
         stack.push("a");
         stack.push("b");
